@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+
+GET     /                          controllers.Application.home()
+GET     /Acer                           controllers.Application.Acer()
+GET     /Asus                           controllers.Application.Asus()
+GET     /Dell                           controllers.Application.Dell()
+GET     /Msi                           controllers.Application.Msi()
+GET     /Promotion                           controllers.Application.Promotion()
+GET     /history                          controllers.Application.history()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
